@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity Vazifa.
+    -->
+    <changeSet id="20230317091345-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="ustoz_id"
+                                 baseTableName="vazifa"
+                                 constraintName="fk_vazifa__ustoz_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ustoz"/>
+
+        <addForeignKeyConstraint baseColumnNames="fan_id"
+                                 baseTableName="vazifa"
+                                 constraintName="fk_vazifa__fan_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="fan"/>
+    </changeSet>
+</databaseChangeLog>

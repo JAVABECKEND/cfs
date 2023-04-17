@@ -1,0 +1,49 @@
+{
+  "applications": "*",
+  "changelogDate": "20230317091346",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "javob",
+  "fields": [
+    {
+      "fieldName": "firstName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lastName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "kursi",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "guruh",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "javob",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "language",
+      "fieldType": "Language",
+      "fieldValues": "UZBEK,ENGLISH,RUSSIA"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Javob",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "ism",
+      "otherEntityName": "ustoz",
+      "ownerSide": true,
+      "relationshipName": "ustoz",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

@@ -1,0 +1,30 @@
+{
+  "applications": "*",
+  "changelogDate": "20230317091344",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "togarak",
+  "fields": [
+    {
+      "fieldName": "togarakNomi",
+      "fieldType": "Nomi",
+      "fieldValues": "KRIMINALIST,EKSPERT,ILMIYMAKTAB,RAQAMLIKRIMINALIST"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Togarak",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "ism",
+      "otherEntityName": "ustoz",
+      "otherEntityRelationshipName": "togarak",
+      "ownerSide": true,
+      "relationshipName": "ustoz",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

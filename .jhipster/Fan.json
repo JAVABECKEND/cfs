@@ -1,0 +1,20 @@
+{
+  "applications": "*",
+  "changelogDate": "20230317091342",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "fan",
+  "fields": [
+    {
+      "fieldName": "nomi",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Fan",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceClass"
+}

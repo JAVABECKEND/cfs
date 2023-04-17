@@ -1,0 +1,39 @@
+{
+  "applications": "*",
+  "changelogDate": "20230317091345",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "vazifa",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Vazifa",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "ism",
+      "otherEntityName": "ustoz",
+      "ownerSide": true,
+      "relationshipName": "ustoz",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityField": "nomi",
+      "otherEntityName": "fan",
+      "ownerSide": true,
+      "relationshipName": "fan",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

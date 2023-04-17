@@ -1,0 +1,32 @@
+{
+  "applications": "*",
+  "changelogDate": "20230317091343",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "ustoz",
+  "fields": [
+    {
+      "fieldName": "ism",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "familya",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Ustoz",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "togarak",
+      "otherEntityRelationshipName": "ustoz",
+      "ownerSide": false,
+      "relationshipName": "togarak",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}
